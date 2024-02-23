@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Color</title>
+</head>
+<body dir="rtl">
+    <div class="container">
+        <p class="title">
+            يمكنك هذا الموقع من معرف قيمة المقاومة من خلال الالوان الموضوعة عليها <br>
+            <span class="blessing">كل الحب والتقدير لجميع المهندسين والمهندسات </span>
+        </p>
+        <div>
+            <p>امسك المقاومة وضع اللون الذهبي او الفضي الى يسارك </p>
+            <p> كم عدد الالوان التي تراها (جميع الالوان)</p>
+            <ul class="list-number">
+                <h4> اختر عدد الالوان </h4>
+                <select onchange="colorNumber()" id="numberofc">
+                <option value="70">اختر عدد الالوان</option>
+
+                <option value="fo">4</option>
+                <option value="fv">5</option>
+            </select>
+            </ul>
+            <div class="colors" id="colors">
+
+                <select onchange="changeValue(option,O1,first)" class="slector" name="one" id="one">
+                    <option value="70">اختر اللون</option>
+
+                    <option value="0">اسود</option>
+                    <option value="1">بني</option>
+                    <option value="2">احمر</option>
+                    <option value="3">برتقالي</option>
+                    <option value="4">اصفر</option>
+                    <option value="5">اخضر</option>
+                    <option value="6">ازرق</option>
+                    <option value="7">بنفسجي</option>
+                    <option value="8">رمادي</option>
+                    <option value="9">ابيض</option>
+                </select>
+                <select onchange="changeValue(two,O2,sec)" name="two" class="slector" id="two">
+                    <option value="70">اختر اللون</option>
+
+                    <option value="0">اسود</option>
+                    <option value="1">بني</option>
+                    <option value="2">احمر</option>
+                    <option value="3">برتقالي</option>
+                    <option value="4">اصفر</option>
+                    <option value="5">اخضر</option>
+                    <option value="6">ازرق</option>
+                    <option value="7">بنفسجي</option>
+                    <option value="8">رمادي</option>
+                    <option value="9">ابيض</option>
+                </select>
+                <select onchange="changeValue(three,O3,third)" class="slector" name="three" id="three">
+                    <option value="70">اختر اللون</option>
+
+                    <option value="0">اسود</option>
+                    <option value="1">بني</option>
+                    <option value="2">احمر</option>
+                    <option value="3">برتقالي</option>
+                    <option value="4">اصفر</option>
+                    <option value="5">اخضر</option>
+                    <option value="6">ازرق</option>
+                    <option value="7">بنفسجي</option>
+                    <option value="8">رمادي</option>
+                    <option value="9">ابيض</option>
+                </select>
+                <select onchange="changeValue(five,O5,fith)"  class="five slector" name="five" id="five">
+                    <option value="70">اختر اللون</option>
+
+                    <option value="0">اسود</option>
+                    <option value="1">بني</option>
+                    <option value="2">احمر</option>
+                    <option value="3">برتقالي</option>
+                    <option value="4">اصفر</option>
+                    <option value="5">اخضر</option>
+                    <option value="6">ازرق</option>
+                    <option value="7">بنفسجي</option>
+                    <option value="8">رمادي</option>
+                    <option value="9">ابيض</option>
+                </select>
+                <select onchange="changeValue(four,O4,foth)" name="four" class="slector" id="four">
+                    <option value="70">اختر اللون</option>
+
+                    <option value="0">ذهبي</option>
+                    <option value="1">فضي</option>
+
+                </select>
+
+
+            </div>
+            <div class="res">
+                <div class="calender">
+                        <span class="o1"    id="o1"></span>
+                        <span class="o1 o2" id="o2"></span>
+                        <span class="o1 o3" id="o3"></span>
+                        <span class="o1 o5" id="o4"></span>
+                        <span class="o1 o4" id="o5"></span>
+
+                </div>
+            </div>
+            <div class="result">
+                <span class="first" id="first"></span>
+                <span class="first" id="sec"></span>
+                <span class="first" id="third"></span>
+                <span class="first" id="foth"></span>
+                <span class="first" id="fith"></span>
+                <span class="first">Oh</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./main.js">
+
+</script>
+</html>

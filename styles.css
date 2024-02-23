@@ -1,0 +1,122 @@
+li{
+    list-style: none;
+}
+.container{
+    padding: 15px;
+    margin: 20px auto;
+    width: 50%;
+
+}
+@media (max-width:767px) {
+    .container {
+        width: 80%;
+    };
+}
+h4{
+    margin: 0;
+}
+p{
+    text-align: start;
+    font-size: 25px;
+    font-weight: bold;
+}
+.list-number{
+    background-color: #eee;
+    text-align: center;
+    padding: 10px 10px ;
+
+    gap: 15px;
+    cursor: pointer;
+}
+.color-content{
+    display: none;
+    padding: 5px;
+}
+.color-content li{
+    padding: 5px;
+    transition: ease 0.3s
+}
+.color-content li:hover{
+    background-color: aliceblue;
+}
+h4{
+    padding: 10px;
+}
+.colors{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+    gap: 15px;    
+}
+.five{
+    display: none;
+}
+.slector{
+    height: 25px;
+}
+.res{
+    padding:25px ;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.calender{
+    width: 150px;
+    height: 50px;
+    background-color: #81805a;
+    position: relative;
+}
+.calender::after{
+    content: '';
+    height: 60px;
+    position: absolute;
+    background-color: rgba(255, 174, 0, 0.881);
+    width: 15px;
+    right: -10px;
+    border-radius: 50%;
+    top: -5px;
+}
+.calender::before{
+    content: '';
+    height: 60px;
+    position: absolute;
+    background-color: rgba(255, 174, 0, 0.881);
+    width: 15px;
+    left: -10px;
+    border-radius: 50%;
+    top: -5px;
+}
+.o1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    right: 15px;
+    height: 100%;
+    background-color: rgb(82, 80, 80);
+}
+.o2{
+    right: 35px;
+}
+.o3{
+    right: 55px;
+}
+.o4{
+    right: 75px;
+}
+.o5{
+    right: inherit;
+    left: 10px;
+}
+.result{
+    background-color: #a9ee31;
+    padding: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15px;
+}
